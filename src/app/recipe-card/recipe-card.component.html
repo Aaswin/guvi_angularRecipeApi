@@ -9,7 +9,25 @@
         <li class="list-group-item">Calories: {{recipeData.recipe.calories}} </li>
         <li class="list-group-item">Url: <a href="{{recipeData.recipe.url}}" target="_blank">{{recipeData.recipe.url}}</a></li>
         <li class="list-group-item">IngredientLines: {{recipeData.recipe.ingredientLines}}</li>
-        <li class="list-group-item">Vitamins: {{recipeData.recipe.calories}}</li>
+        <li   class="list-group-item">Vitamins: 
+        <ul>
+            <li>
+                {{recipeData.recipe.totalNutrients.VITB6A.label}}: {{recipeData.recipe.totalNutrients.VITB6A.quantity}} {{recipeData.recipe.totalNutrients.VITB6A.unit}}
+            </li>
+            <li>
+                {{recipeData.recipe.totalNutrients.VITB12.label}}: {{recipeData.recipe.totalNutrients.VITB12.quantity}} {{recipeData.recipe.totalNutrients.VITB12.unit}}
+            </li>
+            <li>
+                {{recipeData.recipe.totalNutrients.VITC.label}}: {{recipeData.recipe.totalNutrients.VITC.quantity}}{{recipeData.recipe.totalNutrients.VITC.unit}}
+            </li>
+            <li>
+                {{recipeData.recipe.totalNutrients.VITD.label}}: {{recipeData.recipe.totalNutrients.VITD.quantity}}{{recipeData.recipe.totalNutrients.VITD.unit}}
+            </li>
+            <li>
+                {{recipeData.recipe.totalNutrients.VITK1.label}}: {{recipeData.recipe.totalNutrients.VITK1.quantity}}{{recipeData.recipe.totalNutrients.VITK1.unit}}
+            </li>
+        </ul>
+        </li>
     </ul>
     
   </div>
